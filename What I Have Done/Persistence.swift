@@ -20,7 +20,7 @@ struct PersistenceController {
             newActivity.id = UUID()
             newActivity.date = Calendar.current.date(byAdding: .day, value: -number, to: Date())!
             newActivity.title = "Logged \(randomNumber) - \(newActivity.date?.formatted(.dateTime.day().month()) ?? "")"
-            newActivity.category = "work"
+            newActivity.category = .work
             newActivity.quantity = Int64(randomNumber)
             newActivity.unit = "hours"
            
